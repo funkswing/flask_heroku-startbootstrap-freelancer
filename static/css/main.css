@@ -1,0 +1,16 @@
+.custom-highlight {
+  background: #be1a8d;
+  color: #fff;
+  text-shadow: -1px 1px 1px #7b115b;
+}
+/* Apply custom highlight */
+::-moz-selection {
+  background: #be1a8d;
+  color: #fff;
+  text-shadow: -1px 1px 1px #7b115b;
+}
+::selection {
+  background: #be1a8d;
+  color: #fff;
+  text-shadow: -1px 1px 1px #7b115b;
+}
