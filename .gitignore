@@ -12,7 +12,6 @@ build
 dist
 sdist
 eggs
-env
 parts
 var
 develop-eggs
@@ -32,3 +31,6 @@ pip-log.txt
 *.[oa]
 *.py[co]
 *.rbc
+
+# PyCharm
+.idea/
