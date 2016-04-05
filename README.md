@@ -1,5 +1,65 @@
-Flask Heroku
+Flask Heroku with [StartBootstrap Freelancer template](http://startbootstrap.com/template-overviews/freelancer/) 
 ============
+
+What is this?
+-------------
+A template to get your [Flask](http://flask.pocoo.org/) app running on
+[Heroku](https://www.heroku.com/) as fast as possible. For added
+convenience, the templates use [Twitter's Bootstrap
+project](http://twitter.github.com/bootstrap/) to help reduce the amount
+of time it's takes you as a developer to go from an idea to a working
+site.  To further beautify the default site has the [Start Bootstrap Freelancer]
+(http://startbootstrap.com/template-overviews/freelancer/) 
+template applied to the Flask app.
+
+
+Instructions
+------------
+
+First, you'll need to clone the repo.
+
+    $ git clone https://github.com/funkswing/flask_heroku-startbootstrap-freelancer.git
+    $ cd flask_heroku-startbootstrap-freelancer
+
+
+Secondly, ensure you have the following dependencies.
+
+  - Node.js
+  - Ruby
+  - Ruby less gem: `gem install less`
+
+
+Now, you can setup an isolated environment with virtualenv (Windows instructions following).
+
+    $ pip install virtualenv
+    $ virtualenv --no-site-packages env
+    $ env/bin/activate
+
+
+
+Heroku
+------
+Create a Heroku app (Python): [Getting Started on Heroku with Python](https://devcenter.heroku.com/articles/getting-started-with-python#introduction)
+  - Follow the "Introduction" and "Set up" sections to get your Heroku Python app created
+  - The rest of the "Getting Started" guide is geared towards Django and not Flask
+
+
+Deploying to Your App
+---------------------
+Once your app is created on Heroku you can push this repo to the
+Herkou servers and view it in all its glory!
+
+    $ heroku login
+    $ heroku git:remote -a <name-of-heroku-app>
+    $ git push heroku master
+
+You can now view your site at:
+https://\<name-of-heroku-app\>.herokuapp.com/
+  
+
+
+Original Readme contents below...
+-------------
 
 <pre><code>
 
