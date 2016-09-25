@@ -29,9 +29,15 @@ $(function() {
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Toggle modal from #id in URL, e.g. /#portfolioModal1
+if(window.location.hash) {
+    var hash = window.location.hash;
+    $(hash).modal('toggle');
+}
